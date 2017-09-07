@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GUID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcQ-xo-Pzp">
+                                <rect key="frame" x="167" y="323" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0G4-0s-X5Q">
+                                <rect key="frame" x="160" y="464" width="55" height="30"/>
+                                <state key="normal" title="Execute"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-yv-Hgv">
+                                <rect key="frame" x="137" y="524" width="101" height="30"/>
+                                <state key="normal" title="BindCommand"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2Y-Qf-0fB">
+                                <rect key="frame" x="130" y="404" width="115" height="30"/>
+                                <state key="normal" title="InvokeCommand"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HcQ-xo-Pzp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2b4-vS-Fme"/>
+                            <constraint firstItem="0G4-0s-X5Q" firstAttribute="top" secondItem="m2Y-Qf-0fB" secondAttribute="bottom" constant="30" id="3bX-lW-gER"/>
+                            <constraint firstItem="HcQ-xo-Pzp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QSn-ew-p0P"/>
+                            <constraint firstItem="m2Y-Qf-0fB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gZ6-Kg-Kl0"/>
+                            <constraint firstItem="m2Y-Qf-0fB" firstAttribute="top" secondItem="HcQ-xo-Pzp" secondAttribute="bottom" constant="60" id="mAB-Km-r5Y"/>
+                            <constraint firstItem="ooE-yv-Hgv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="meL-6T-w3v"/>
+                            <constraint firstItem="ooE-yv-Hgv" firstAttribute="top" secondItem="0G4-0s-X5Q" secondAttribute="bottom" constant="30" id="o2t-Qt-2Ux"/>
+                            <constraint firstItem="0G4-0s-X5Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q9j-en-7FE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BindButton" destination="ooE-yv-Hgv" id="mGc-t2-RkC"/>
+                        <outlet property="ExecuteButton" destination="0G4-0s-X5Q" id="xpE-vG-Z0P"/>
+                        <outlet property="GuidLabel" destination="HcQ-xo-Pzp" id="FLb-hg-SvV"/>
+                        <outlet property="InvokeButton" destination="m2Y-Qf-0fB" id="LKB-Mr-N6n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
